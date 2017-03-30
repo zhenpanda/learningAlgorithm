@@ -156,14 +156,14 @@ bst.left.left.left.value;
 // bst.contains(100);
 
 // iteratorFunc callback
-// bst.depthFirstTraversal(log,"in-order");
-// console.log("-----");
-// bst.depthFirstTraversal(log,"pre-order");
-// console.log("-----");
-// bst.depthFirstTraversal(log,"post-order");
-// console.log("-----");
-// bst.breathFirstTraversal(log);
-// console.log("-----");
+bst.depthFirstTraversal(log,"in-order");
+console.log("-----");
+bst.depthFirstTraversal(log,"pre-order");
+console.log("-----");
+bst.depthFirstTraversal(log,"post-order");
+console.log("-----");
+bst.breathFirstTraversal(log);
+console.log("-----");
 bst.getMinVal();
 bst.getMaxVal();
 
