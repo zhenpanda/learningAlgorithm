@@ -147,12 +147,16 @@ binarySearchTree.prototype.getMaxVal = function(){
 
 // testing tree
 var bst = new binarySearchTree(50);
+bst.insert(200);
+bst.insert(100);
+bst.insert(70);
 bst.insert(30);
+bst.insert(60);
+bst.insert(40);
 bst.insert(20);
 bst.insert(10);
-bst.insert(100);
-bst.insert(200);
-bst.left.left.left.value;
+
+// bst.left.left.left.value;
 // bst.contains(100);
 
 // iteratorFunc callback
@@ -174,5 +178,31 @@ bst.getMaxVal();
    big O notation: "O (log n)" logarithmic run time
 
    but only works if it's balanced
+
+*/
+
+/*
+                                  F
+                              /      \
+                            D          G
+                          /  \       /  \
+                        B     E     H    L
+                      /  |         /
+                    A     C       I
+                                   \
+                                    J
+                                  /
+                                K
+
+    Preorder -> Read data at root first, then go to the left, then go to the right
+    root node -> left node -> right node
+
+    F - DBACE - KGHJIL
+
+    Inorder -> Read anything to the left first, then read data at the root node, then read anyting to the right
+    left node -> root node -> right node
+
+    ABCDEFGHIJKL
+
 
 */
